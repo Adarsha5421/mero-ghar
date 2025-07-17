@@ -51,7 +51,7 @@ export default function LoginPage() {
         <div className="min-h-screen bg-white">
             {/* Header */}
             <header className="border-b border-gray-200 py-4 px-6">
-                <div className="max-w-7xl mx-auto flex justify-between items-center">
+                <div className="max-w-8xl mx-auto flex justify-between items-center">
                     <div
                         className="flex items-center cursor-pointer"
                         onClick={() => navigate('/')}
