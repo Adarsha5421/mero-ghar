@@ -79,7 +79,7 @@ const ResetPassword = () => {
                     <h2>Set a New Password</h2>
                 </div>
                 <p style={styles.subtitle}>
-                    Your new password must be at least 9 characters long.
+                    Your new password must be at least 8 characters long.
                 </p>
 
                 <form onSubmit={handleSubmit}>
