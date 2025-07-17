@@ -7,7 +7,7 @@ export default function ConfirmationModal({
     title,
     message,
     confirmText = 'Confirm',
-    cancelText = 'Cancels'
+    cancelText = 'Cancel'
 }) {
     if (!isOpen) return null;
 
