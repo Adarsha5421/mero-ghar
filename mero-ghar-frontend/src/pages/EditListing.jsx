@@ -32,7 +32,7 @@ export default function EditListing() {
                     images: data.listing.images || [],
                 });
             } catch {
-                toast.error('Failed to load listing');
+                toast.error('Failed to load listings');
                 navigate('/host-dashboard');
             } finally {
                 setLoading(false);
