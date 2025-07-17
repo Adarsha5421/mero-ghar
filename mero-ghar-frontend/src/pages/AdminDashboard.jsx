@@ -39,7 +39,7 @@ const DeleteConfirmationModal = ({
         switch (entityType) {
             case 'user': return 'user';
             case 'listing': return 'listing';
-            case 'booking': return 'bookings';
+            case 'booking': return 'booking';
             default: return 'item';
         }
     };
