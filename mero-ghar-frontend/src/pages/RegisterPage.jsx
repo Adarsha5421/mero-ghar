@@ -1,87 +1,4 @@
-// import { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
 
-// export default function RegisterPage() {
-//     const navigate = useNavigate();
-//     const [form, setForm] = useState({
-//         name: '',
-//         email: '',
-//         password: '',
-//         role: 'guest',
-//     });
-//     const [error, setError] = useState('');
-
-//     const handleChange = (e) =>
-//         setForm({ ...form, [e.target.name]: e.target.value });
-
-//     const handleSubmit = async (e) => {
-//         e.preventDefault();
-//         setError('');
-
-//         try {
-//             const res = await fetch('http://localhost:5001/api/auth/register', {
-//                 method: 'POST',
-//                 headers: { 'Content-Type': 'application/json' },
-//                 body: JSON.stringify(form),
-//             });
-
-//             const data = await res.json();
-//             if (!res.ok) return setError(data.message || 'Registration failed');
-
-//             localStorage.setItem('token', data.token);
-//             localStorage.setItem('user', JSON.stringify(data.user));
-//             navigate('/login');
-//         } catch {
-//             setError('Something went wrong');
-//         }
-//     };
-
-//     return (
-//         <div className="flex min-h-screen items-center justify-center bg-gray-100">
-//             <div className="bg-white p-6 rounded shadow-md w-full max-w-sm">
-//                 <h2 className="text-xl font-semibold mb-4">Register on Mero-Ghar</h2>
-//                 {error && <p className="text-red-600 mb-3">{error}</p>}
-//                 <form onSubmit={handleSubmit}>
-//                     <input
-//                         type="text"
-//                         name="name"
-//                         placeholder="Full Name"
-//                         className="w-full p-2 mb-3 border rounded"
-//                         onChange={handleChange}
-//                         required
-//                     />
-//                     <input
-//                         type="email"
-//                         name="email"
-//                         placeholder="Email"
-//                         className="w-full p-2 mb-3 border rounded"
-//                         onChange={handleChange}
-//                         required
-//                     />
-//                     <input
-//                         type="password"
-//                         name="password"
-//                         placeholder="Password"
-//                         className="w-full p-2 mb-3 border rounded"
-//                         onChange={handleChange}
-//                         required
-//                     />
-//                     <select
-//                         name="role"
-//                         className="w-full p-2 mb-4 border rounded"
-//                         onChange={handleChange}
-//                     >
-//                         <option value="guest">Guest</option>
-//                         <option value="host">Host</option>
-//                     </select>
-//                     <button className="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">
-//                         Register
-//                     </button>
-//                 </form>
-//             </div>
-//         </div>
-//     );
-// }
 
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
@@ -142,7 +59,7 @@ export default function RegisterPage() {
                     <div className="hidden md:flex items-center space-x-4">
                         <button
                             onClick={() => navigate('/login')}
-                            className="text-sm font-medium text-gray-700 hover:text-gray-900"
+                            className="text-sm font-medium text-gray-800 hover:text-gray-900"
                         >
                             Log In
                         </button>
