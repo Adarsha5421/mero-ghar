@@ -31,7 +31,7 @@ export default function HomePage() {
         {
             id: 1,
             title: 'Modern apartment in city center',
-            location: 'Pokhara',
+            location: 'Kathmandu',
             price: 45,
             rating: 4.92,
             reviews: 128,
