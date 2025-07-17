@@ -59,7 +59,7 @@ export default function RegisterPage() {
                     <div className="hidden md:flex items-center space-x-4">
                         <button
                             onClick={() => navigate('/login')}
-                            className="text-sm font-medium text-gray-800 hover:text-gray-900"
+                            className="text-sm font-medium text-gray-700 hover:text-gray-900"
                         >
                             Log In
                         </button>
