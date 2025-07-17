@@ -37,7 +37,7 @@ export default function BrowseListings() {
             setPage(data.page);
             setTotalPages(data.totalPages);
         } catch (err) {
-            toast.error('Failed to load listing.');
+            toast.error('Failed to load listings.');
             console.error(err);
         } finally {
             setLoading(false);
